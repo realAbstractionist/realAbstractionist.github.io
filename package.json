@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-itcenter",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-gzip": "^1.2.0"
+  },
+  "dependencies": {
+    "h5bp": "^0.1.4"
+  }
+}
