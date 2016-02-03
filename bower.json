@@ -1,0 +1,24 @@
+{
+  "name": "Develooper",
+  "version": "0.0.0",
+  "authors": [
+    "realAbstractionist <justforsignup@mail.ru>"
+  ],
+  "description": "A Develooper landing page",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "*",
+    "animate.css": "*",
+    "normalize-css": "~3.0.3",
+    "wow": "wowjs#~1.1.2",
+    "jquery": "~2.2.0",
+    "lightslider": "~1.1.5"
+  }
+}

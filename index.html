@@ -1,66 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>llustrator Portfolio</title>
-	<link rel="stylesheet" href="css/style.css">
-<!--  <link rel="stylesheet" href="build/style.css.gz">-->
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	
-</head>
-<body>
-	<section class="intro">
-		<video class="bg-video" loop muted autoplay poster="video/poster.jpg">
-			<source src="video/illustrator.mp4" type="video/mp4">
-		</video>
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><title>Develooper | Web-development Studio</title><link rel=stylesheet href=lib/normalize-css/normalize.css><link rel=stylesheet href=css/bundle.min.css><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic" rel=stylesheet type=text/css><link rel=stylesheet href=lib/font-awesome/css/font-awesome.min.css><link rel=stylesheet href=lib/animate.css/animate.min.css><link rel=stylesheet href=lib/lightslider/dist/css/lightslider.min.css></head><body><input id=op-menu type=checkbox><div class=nav><div class=order>заказать</div><div class=nav-button><label for=op-menu class=menu-button><i class="fa fa-bars"></i></label></div></div><div class=full-menu><label for=op-menu><i class="fa fa-times"></i></label><nav><ul><li><a href=#intro>Главная</a></li><li><a href=#about>О нас</a></li><li><a href=#team>Команда</a></li><li><a href=#>Методология</a></li><li><a href=#>Контакты</a></li></ul></nav></div><section id=intro><video id=bg-video autoplay loop muted poster=video/Winter-Grass.jpg><source src=video/1.mp4 type=video/mp4></video><div class=overlay><img id=top-logo src=img/logo-small.png alt=develooper><div class=text-wrapper><p class=description>Creating <em>a new experience</em> for local customers and world-wide</p><div class=wrapper><img id=moto src=img/moto.png></div></div><div id=scroll><i class="fa fa-chevron-down animated infinite bounce"></i></div></div></section><section id=about><div class=bg-holder><h2 class=title>Мы</h2><p class=text>Команда перспективных специалистов, которая всегда приводит вашие проекты к <em><strong>цели</strong></em>. Мы с ответственностью и энтузиазмом подходим к любым задачам. Любим <em><strong>креативные решения</strong></em>.</p></div></section><section id=do><div class=items-wrapper><div class=item><div class=overlay><div class=img-wrapper><img src=img/web-development-title.png class=field></div><p class="description unselectable">Основное направление работы нашей студии. Прочная архитектура и современный фронт-энд.</p></div></div><div class=item><div class=overlay><div class=img-wrapper><img src=img/mobile-title.png class=field></div><p class="description unselectable">Разработка приложений под все популярные платформы. Адаптивная верстка под все устройства.</p></div></div><div class=item><div class=overlay><div class=img-wrapper><img src=img/web-design-title.png class=field></div><p class="description unselectable">Современный стиль, учитывающий все тренды Web &amp; Mobile разработок. Соответствие гайдлайнам платформ.</p></div></div><div class=item><div class=overlay><div class=img-wrapper><img src=img/all-inclusive-title.png class=field></div><p class=description>Полноформатные проекты, поддержка и сопровождение.</p></div></div></div></section><section id=team><ul id=light-slider><li><img class=bg-img src=img/sergei.jpg><div class=overlay><h3 class=name>Сергей Кухаренко</h3><p class=description>Фронт-энд босс. Любит лонгборды, дизайны и малиновый смузи.</p><div class=socials><a class=social href=http://vk.com/obviouslyiwillgobananas target=_blank><i class="fa fa-vk"></i></a> <a class=social href="https://www.instagram.com/realabstractionist/" target=_blank><i class="fa fa-instagram"></i></a> <a class=social href=https://www.behance.net/abstractionist target=_blank><i class="fa fa-behance"></i></a></div></div></li><li><img class=bg-img src=img/igor.jpg><div class=overlay><h3 class=name>Игорь Ковган</h3><p class=description>Дядя босс. Пьет ряжку и жрет в KFC каждый день. Проповедует Node.js</p><div class=socials><a class=social href=http://vk.com/ikovgan target=_blank><i class="fa fa-vk"></i></a> <a class=social href=http://vk.com/ikovgan target=_blank><i class="fa fa-instagram"></i></a></div></div></li><li><img class=bg-img src=img/dima.jpg><div class=overlay><h3 class=name>Дмитрий Кухаренко</h3><p class=description>Маленький бородач JSon. Играет в браузерные игры и снимает на пленку.</p><div class=socials><a class=social href=http://vk.com/whyrawr target=_blank><i class="fa fa-vk"></i></a> <a class=social href="https://www.instagram.com/whyrawr/" target=_blank><i class="fa fa-instagram"></i></a></div></div></li></ul></section><script src=lib/jquery/dist/jquery.min.js></script><script src=lib/lightslider/dist/js/lightslider.min.js></script><script src=js/app.js type=text/javascript></script><script type=text/javascript>
+    $(document).ready(function() {
+        $("#light-slider").lightSlider({
+            item: 1,
+            autoWidth: false,
+            slideMove: 1, // slidemove will be 1 if loop is true
+            slideMargin: 0, // Changed
 
-		<div class="overlay">
-			<h1>Иллюстратор <em>&amp;</em> Графический дизайнер</h1>
-			<h2 class="author">Персональная студия</h2>
-			<div class="tags">
-				<em>art</em>
-				<span></span>
-				<em>creative</em>
-				<span></span>
-				<em>tech</em>
-			</div>
-			<div class="explore"><i class="fa fa-angle-down"></i></div>
-		</div>
-	</section>	
-	
-	<section class="about">
-		<article class="about-wrapper">
-			<div class="img-wrapper">
-				<img src="img/author.jpg">
-			</div>
-			<div class="text-wrapper">
-				<h3>Сергей Кухаренко, г. Красноярск</h3>
-				<p>Всем привет! Графикой и иллюстрациями я занимаюсь уже больше 7 лет. За все это время я участвовал в большом количестве проектов и выработал свой собственный стиль. Мое любимое направление - это flat-дизайн.</p>
-				<p>Этот ресурс предназначен для того, чтобы познакомить Вас с моим творчеством. Если вам интересно сотрудничество, то свяжитесь со мной с помощью формы контактов.</p>
-				<p>Смотрите мои последние работы:</p>
-				<div class="socials">
-					<a href="#"><i class="fa fa-behance fa-2x"></i></a>
-					<a href="#"><i class="fa fa-dribbble fa-2x"></i></a>
-				</div>
-			</div>
-		</article>
-	</section>
-	
-	<section class="projects">
-		<div class="project-item"><img src="img/1.jpg"></div>
-		<div class="project-item"><img src="img/2.jpg"></div>
-		<div class="project-item"><img src="img/3.jpg"></div>
-		<div class="project-item"><img src="img/4.jpg"></div>
-		<div class="project-item"><img src="img/5.jpg"></div>
-		<div class="project-item"><img src="img/6.png"></div>
-		<div class="project-item"><img src="img/7.jpg"></div>
-		<div class="project-item"><img src="img/8.jpg"></div>
-	</section>
-	
-	<section class="contact">
-		<p>Связаться со мной</p>
-		<a href="mailto:justforsignup@mail.ru">justforsignup@mail.ru</a>
-	</section>
-</body>
-</html>
+            addClass: '',
+            mode: "slide",
+            useCSS: true,
+            cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+            easing: 'linear', //'for jquery animation',////
+
+            speed: 400, //ms'
+            auto: false,
+            pauseOnHover: false,
+            loop: true, // Changed
+            slideEndAnimation: true,
+            pause: 2000,
+
+            keyPress: false,
+            controls: false, // Changed
+            prevHtml: '',
+            nextHtml: '',
+
+            rtl:false,
+            adaptiveHeight:false,
+
+            vertical:false,
+            verticalHeight:500,
+            vThumbWidth:100,
+
+            thumbItem:10,
+            pager: true,
+            gallery: false,
+            galleryMargin: 5,
+            thumbMargin: 5,
+            currentPagerPosition: 'middle',
+
+            enableTouch:true,
+            enableDrag:true,
+            freeMove:true,
+            swipeThreshold: 20,  // Changed
+
+            responsive : [],
+
+            onBeforeStart: function (el) {},
+            onSliderLoad: function (el) {},
+            onBeforeSlide: function (el) {},
+            onAfterSlide: function (el) {},
+            onBeforeNextSlide: function (el) {},
+            onBeforePrevSlide: function (el) {}
+        });
+    });
+  </script></body></html>
